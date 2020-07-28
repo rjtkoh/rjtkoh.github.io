@@ -718,6 +718,7 @@ button{
 #logogrid{
     width: 100%;
     display: block;
+    text-align: justify;
 }
 
 @media (min-width: 640px) {
@@ -729,7 +730,7 @@ button{
 
 @media (max-width: 640px) {
     .gridlogo{
-        width: 49.5%;
+        width: 46%;
         display: inline-block;
     }
 }
