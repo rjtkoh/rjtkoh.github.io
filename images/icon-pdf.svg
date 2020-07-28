@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74 83" style="enable-background:new 0 0 74 83;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.5;fill-rule:evenodd;clip-rule:evenodd;fill:#0040D0;enable-background:new    ;}
+	.st1{filter:url(#Adobe_OpacityMaskFilter);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st3{mask:url(#mask-2_1_);fill-rule:evenodd;clip-rule:evenodd;fill:#0040D0;}
+</style>
+<g id="Symbols">
+	<g id="footer_x2F_desktop" transform="translate(-644.000000, -281.000000)">
+		<g id="icon-pdf" transform="translate(644.000000, 281.000000)">
+			<polygon id="Fill-1" class="st0" points="55.3,80 55.3,65.2 71.1,65.2 			"/>
+			<g id="Group-5">
+				<g id="Clip-4">
+				</g>
+				<defs>
+					<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="73.6" height="83">
+						<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+					</filter>
+				</defs>
+				<mask maskUnits="userSpaceOnUse" x="0" y="0" width="73.6" height="83" id="mask-2_1_">
+					<g class="st1">
+						<polygon id="path-1_1_" class="st2" points="0,0 73.6,0 73.6,83 0,83 						"/>
+					</g>
+				</mask>
+				<path id="Fill-3" class="st3" d="M27.1,23.3h-1.4v8.2h1.1c2.6,0,3.9-1.4,3.9-4.1C30.7,24.7,29.5,23.3,27.1,23.3L27.1,23.3z
+					 M42.1,26.6v2.2h-4.3v5h-2.6V21.2h7.2v2.2h-4.6v3.2H42.1z M23,33.7V21.2h4c2.1,0,3.7,0.5,4.8,1.6c1.1,1.1,1.7,2.6,1.7,4.5
+					c0,2.1-0.6,3.7-1.8,4.8c-1.2,1.1-2.9,1.6-5.1,1.6H23z M68.6,62.9c-0.1,0-0.2-0.1-0.3-0.1H53.1V78H14.4V40.2h38.6V15.1H14.4V5
+					h54.1V62.9z M58.1,75.3v-7.4h7.4L58.1,75.3z M12.8,21.2h4c1.5,0,2.7,0.3,3.5,1c0.8,0.7,1.2,1.6,1.2,2.9c0,1.4-0.4,2.4-1.3,3.1
+					c-0.8,0.7-2.1,1.1-3.6,1.1h-1.1v4.5h-2.7V21.2z M10.7,33.6C10.4,33.8,10,34,9.6,34c-0.5,0-0.9-0.1-1.1-0.4C8.2,33.3,8,33,8,32.5
+					c0-0.5,0.1-0.8,0.4-1.1C8.7,31.2,9.1,31,9.6,31c0.5,0,0.8,0.1,1.1,0.4c0.3,0.3,0.4,0.6,0.4,1.1C11.1,32.9,10.9,33.3,10.7,33.6
+					L10.7,33.6z M9.4,0v15.1H0v25.2h9.4V83h48.1l16.1-16V0H9.4z M18.2,26.6c0.4-0.3,0.6-0.8,0.6-1.4c0-0.6-0.2-1.1-0.5-1.4
+					c-0.3-0.3-0.9-0.4-1.6-0.4h-1.2v3.7h0.9C17.2,27.1,17.8,26.9,18.2,26.6L18.2,26.6z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
