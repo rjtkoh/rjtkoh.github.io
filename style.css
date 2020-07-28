@@ -268,11 +268,13 @@ footer{
         width: 100px;
         height: 40px;
         padding-top: 12px;
+        -webkit-user-select: none;
         cursor: pointer;
         transition: all 0.2s linear; 
     }
 
     #navitem-home-mobile{
+        -webkit-user-select: none;
         display: none;
     }
 
