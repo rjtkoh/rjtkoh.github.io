@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+        <title>VCAT</title>
+</head>
+
+<nav> 
+    <img onclick="location.href='index.html';" id="RKlogo" src="images/RKlogo.svg" alt="" srcset="">
+    <ul id="navlist">
+        <li onclick="location.href='index.html';" id="navitem-home-mobile"class="navitems">
+            <img class="footernavicon" src="images/icon-home-default.svg" alt="" srcset="">
+            Home</li>
+
+        <li onclick="location.href='work.html';" class="navitems">
+            <img class="footernavicon" src="images/icon-work-default.svg" alt="" srcset="">
+            Work</li>
+
+        <li onclick="location.href='about.html';" class="navitems">
+            <img class="footernavicon" src="images/icon-about-default.svg" alt="" srcset="">
+            About</li>
+
+        <li onclick="location.href='skills.html';" class="navitems">
+            <img class="footernavicon" src="images/icon-skills-default.svg" alt="" srcset="">
+            Skills</li>
+    </ul>
+</nav>
+
+<body>
+    <div class ="twothirds-wrapper">
+        <div class="third">
+            <div onclick="location.href='work.html'" id = "breadcrumb">Work / </div>
+            <h1>VCAT</h1>
+            <h3>Userflow and micro-interactions for a hearings look-up and payments portal</h3>
+
+            <div class= "project-spec">
+                <div class = "label">Platforms</div>
+                <p>Web</p>
+            </div>
+
+            <div class= "project-spec">
+                <div class = "label">Responsibilities</div>
+                <p>UI design, interaction design, user testing</p>
+            </div>
+
+            <div class= "project-spec">
+                <div class = "label">Period</div>
+                <p>2020</p>
+            </div>
+
+        </div>
+        <div class="two-thirds">
+            <img class = "fullimg" src="images/vcat-cover.png" alt="" srcset=""> 
+            <h4 style="margin-top: 30px">Background</h4>
+            <p>One of the most visited sections of the VCAT site is the hearings page. Here, users can look up when and where their hearing is. The previous state of it was pretty basic. Pain points included:
+            </p>
+            <ul>
+                <li>Difficult to find your case, as there's hundreds of cases to scroll and sift through every day</li>
+                <li>No clear way to pay for your hearing online</li>
+                <li>Unclear labelling of case details</li>
+                <li>Lack of accessible information surrounding the hearings process </li>
+            </ul>
+            <img class = "fullimg" style="width: 300px; display: block; margin: 60px auto 20px auto;" src="images/VCAT-hearings-current.png" alt="" srcset=""> 
+            
+            <p class="caption"style="text-align: center" >The old version of hearings.</p> 
+            
+            <h4 style="margin-top: 30px">Userflow</h4>
+            <p>As the components had already been made, it was a matter of dragging and dropping in components from our new design system, allowing me to prototype and test straight away in high-fidelity. Here I've constructed a userflow using such components to link hearings to a new online payment portal.</p>
+            
+            <img class = "fullimg" src="images/VCAT-userflow.png" alt="" srcset=""> 
+            <p class="caption">Payment portal accessible from both the hearings page, and payments page</p> 
+
+            <h4 style="margin-top: 30px">Mircro-interactions</h4>
+            <p>Various micro-interactions were implemented in order to allow the user to complete their tasks as smooth as possible. They include:</p>
+            <ul>
+                <li>Search filters anchoring to the top, allowing the user to filter throw results at any point in the scroll region.</li>
+                <li>Important information about hearings anchoring to the right, allowing quick access to queries around the process whilst in context.</li>
+                <li>Horizontally scrollable date selectors on the mobile payments page, to allow for multiple day hearings to be listed.</li>
+                <li>A skeleton loading state when fetching results, to re-assure the user their input has been acknowledged.</li>
+            </ul>
+           
+            <video style="margin-top: 50px;" controls src="images/VCAT-hearings-payment-flow.mp4"></video>
+            <p class="caption">Desktop experience starting from the hearings page</p> 
+
+            <video style="width: 300px; display: block; margin: 60px auto 20px auto;" controls src="images/VCAT-mobile-payment-flow.mp4"></video>
+            <p class="caption" style="text-align: center" >Mobile experience starting from the payments page</p> 
+
+            <h4 style="margin-top: 30px">Outcome</h4>
+            <p>The above prototypes were usertested with a 100% pass rate on first iteration. Users clearly understood how to look up their case, and pay for it. This feature is being built in React and is currently in development (as of Aug 2020).</p>
+            
+        
+        
+        </div>
+
+
+        <div class="cv-wrapper">
+            <div id="project-nav">
+                <button class="more-link" onclick="location.href='dailymandarin.html';"><img style="vertical-align: middle; margin-right: 7px;" src="images/icon-arrow-left.svg" alt="" srcset="">Prev</button>
+                <button class="more-link" onclick="location.href='work.html';" ><img style="vertical-align: middle;" src="images/icon-bento.svg" alt="" srcset=""></button>
+                <button class="more-link" onclick="location.href='happyhabit.html';">Next<img style="vertical-align: middle; margin-left: 7px;" src="images/icon-arrow-right.svg" alt="" srcset=""></button>
+            </div>
+
+            <div class="divider"></div>
+            <div id="CV-section">
+                <h2 style = "text-align: center;">Download CV</h2>
+                <p style = "text-align: center;">Last updated 26 July 2020</p>
+                <div style = "margin-top: 40px;" id="download-links">
+
+                    <button class = "download-button" style="float: left;">
+                        <img class = "download-icons" src="images/icon-doc.svg" alt="" srcset="">
+                        <div class="download-textgroup">
+                            <div class="download-title">For recruiters</div>
+                            <p>A database friendly no frills word doc</p>
+                        </div>
+                    </button>
+
+                    <button class = "download-button" style="float: right;">
+                        <img class = "download-icons" src="images/icon-pdf.svg" alt="" srcset="">
+                        <div class="download-textgroup">
+                            <div class="download-title">For employers</div>
+                            <p>A swish looking PDF made to impress</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        
+        </div>  
+        
+
+
+
+    </div>
+
+</body>
+
+<footer>
+
+    <h2 style = "text-align: center;">Get in touch</h2>
+    <button style="margin-top: 30px;" class="button-ghost">hello@robertkoh.com.au</button>
+    <div id="socialmedia">
+        <button class="button-social">
+            <img src="images/icon-linkedin.svg" alt="" srcset="">
+        </button>
+        <button class="button-social">
+            <img src="images/icon-dribbble.svg" alt="" srcset="">
+        </button>
+        <button class="button-social">
+            <img src="images/icon-behance.svg" alt="" srcset="">
+        </button>
+        <button class="button-social">
+            <img src="images/icon-medium.svg" alt="" srcset="">
+        </button>
+
+    </div>
+
+</footer>
+</html>
