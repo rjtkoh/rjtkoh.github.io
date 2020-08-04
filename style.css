@@ -388,7 +388,6 @@ footer{
 }
 
 .button-ghost{
-    content:'testing';
     height: 52px;
     background-color: white;
     color:  #0047D0;
@@ -402,6 +401,16 @@ footer{
     border-style: solid;
     border-width: 2px;
     border-color: #0047D0;
+    user-select: all;
+}
+
+.button-ghost:hover{
+    background: aquamarine;
+    border-style: solid;
+    border-width: 2px;
+    border-color: aquamarine;
+    transition: all 0.2s linear;
+
 }
 
 .button-social{
@@ -948,6 +957,58 @@ video{
 
 
 
+
+/* TOOLTIP */
+
+#tooltiphidden{
+    visibility: hidden;
+  }
+  
+  #tooltipshow{
+    visibility: visible;
+  }
+  
+  #tooltipcopied{
+    visibility: visible;
+    background: blue;
+    width: 60px;
+    transition: all 0.1s linear;
+  }
+  
+  
+  .tooltip{
+    padding:5px;
+    font-family: 'Open Sans', sans-serif;
+    width: 120px;
+    height:20px;
+    line-height: 20px;
+    font-size: 13px;
+    background: #2F2D39;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    /* border-radius: 3px; */
+  }
+  
+  .triangle{
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #2F2D39;
+    margin: 0 auto 7px auto;
+    visibility: hidden;
+  }
+  
+  #trianglecopied{
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid blue;
+    margin: 0 auto 7px auto;
+    visibility: visible;
+  }
 
 
 
