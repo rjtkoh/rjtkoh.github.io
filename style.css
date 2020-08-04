@@ -387,6 +387,7 @@ footer{
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
+    font-size: 14px;
     text-align: center;
     border-radius: 26px;
     transition: all 0.2s linear;
@@ -401,6 +402,7 @@ footer{
     font-weight: 800;
     text-align: center;
     border-radius: 26px;
+    font-size: 14px;
     transition: all 0.2s linear;
 }
 
@@ -439,6 +441,7 @@ footer{
     padding-left:20px;
     padding-right:20px;
     width: auto;
+    font-size: 14px;
     border-style: solid;
     border-width: 2px;
     border-color: #0047D0;
