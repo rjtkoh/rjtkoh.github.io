@@ -358,10 +358,12 @@ footer{
         -webkit-user-select: none;
         user-select: none;
         -ms-user-select: none;
+        transition: all 0.2s linear;
     }
 
     .navitems:active{
         background: #E7EEFF;
+        transition: all 0.2s linear;
     }
 
     #navitem-home-mobile{
