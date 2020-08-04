@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="scripts.js"></script>
 <link rel="icon" type="image/png" href="favicon.ico"/>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
         <title>Les Verbes</title>
@@ -109,8 +110,10 @@
 
 <footer>
 
-    <h2 style = "text-align: center;">Get in touch</h2>
-    <button style="margin-top: 30px;" class="button-ghost">rjtkoh@gmail.com</button>
+<h2 style = "text-align: center; margin-bottom: 30px;">Get in touch</h2>
+    <div class="tooltip" id="tooltiphidden">copy to clipboard</div>
+    <div class="triangle"></div>
+    <button id="btnCopy" onclick= "copyStuff()" onmouseenter="enterFunc()" onmouseout="outFunc()" class="button-ghost">rjtkoh@gmail.com</button>
     <div id="socialmedia">
         <button onclick="location.href='https://au.linkedin.com/in/robert-koh-a13b7979'" class="button-social">
             <img src="images/icon-linkedin.svg" alt="" srcset="">
