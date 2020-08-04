@@ -210,6 +210,12 @@ body{
     background-color: #7fffd4;
 }
 
+.download-button:active{
+    transform: scale(.95);
+    transition: all 0.1s linear;
+    background-color: #E7EEFF;
+}
+
 /* FOOTER */
 
 footer{
@@ -422,6 +428,12 @@ footer{
     transition: all 0.2s linear;
 }
 
+.button-primary:active{
+    transform: scale(.95);
+    transition: all 0.1s linear;
+    background-color: #E7EEFF;
+}
+
 .CTAarrow{
     display:none;
 }
@@ -455,6 +467,13 @@ footer{
     border-color: aquamarine;
     transition: all 0.2s linear;
 
+}
+
+
+.button-ghost:active{
+    transform: scale(.95);
+    transition: all 0.1s linear;
+    background-color: #E7EEFF;
 }
 
 .button-social{
