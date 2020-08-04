@@ -360,6 +360,10 @@ footer{
         -ms-user-select: none;
     }
 
+    .navitems:active{
+        background: #E7EEFF;
+    }
+
     #navitem-home-mobile{
         display: inline-block;
     }
