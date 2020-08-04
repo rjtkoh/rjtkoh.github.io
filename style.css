@@ -491,6 +491,7 @@ button{
         font-size: 23px;
         vertical-align: middle;
         background-color: none;
+        padding: none;
     }
 }
 
@@ -502,7 +503,12 @@ button{
         font-size: 27px;
         vertical-align: middle;
         background-color: none;
+        padding: none;
     }
+}
+
+button{
+    padding: none;
 }
 
 
@@ -520,6 +526,7 @@ button{
     display: block;
     margin-top: -40px;
     transition: all 0.2s linear;
+   
 }
 
 .more-link:hover:after{
