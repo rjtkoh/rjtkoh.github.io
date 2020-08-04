@@ -471,7 +471,7 @@ footer{
 
 
 .button-ghost:active{
-    transform: scale(.95);
+    transform: scale(.94);
     transition: all 0.1s linear;
     background-color: #E7EEFF;
 }
