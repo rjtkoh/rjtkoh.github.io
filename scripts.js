@@ -36,7 +36,7 @@ window.addEventListener('scroll', function(e){
     newValue = window.pageYOffset;
 
     //Subtract the two and conclude
-    if(oldValue - newValue < 0){
+    if(oldValue - newValue < 0 && window.scrollY>300){
       document.querySelector(".navGroup").setAttribute("id", "hiddenNav");
       
     } else if(oldValue - newValue > 0 ){
