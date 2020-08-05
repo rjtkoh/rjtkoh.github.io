@@ -244,7 +244,15 @@ footer{
 /* NAVIGATION */
 
 
-
+#visibleNav{
+    opacity: 1;
+    transition: all 0.2s linear;
+  }
+  
+  #hiddenNav{
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
 
 
 @media(min-width: 768px) {

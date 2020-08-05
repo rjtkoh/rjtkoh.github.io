@@ -1,4 +1,5 @@
 
+// COPY TO CLIPBOARD
 function copyStuff(){
   document.getElementById("btnCopy");
   document.execCommand("Copy");
@@ -23,3 +24,25 @@ function outFunc() {
   document.querySelector(".triangle").setAttribute("id", "tooltiphidden");
 
 }
+
+
+// SHOW HIDE NAV
+
+let oldValue = 0;
+
+window.addEventListener('scroll', function(e){
+
+    // Get the new Value
+    newValue = window.pageYOffset;
+
+    //Subtract the two and conclude
+    if(oldValue - newValue < 0){
+      document.querySelector(".navGroup").setAttribute("id", "hiddenNav");
+      
+    } else if(oldValue - newValue > 0 ){
+         document.querySelector(".navGroup").setAttribute("id", "visibleNav");
+    }
+
+    // Update the old value
+    oldValue = newValue;
+});
