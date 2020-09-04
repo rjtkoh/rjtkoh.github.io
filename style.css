@@ -351,6 +351,8 @@ footer{
         margin: 0 auto;
         padding-top: 12px;
         padding-bottom: 4px;
+        transition: all 0.2s linear;
+        opacity: 1;
     }
 
     .navitems{
@@ -367,6 +369,7 @@ footer{
         user-select: none;
         -ms-user-select: none;
         transition: all 0.2s linear;
+        opacity: 1;
     }
 
     .navitems:active{
