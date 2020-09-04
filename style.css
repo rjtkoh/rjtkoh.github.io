@@ -401,21 +401,23 @@ footer{
 /* BUTTONS */
 
 .button-primary{
-    width: 150px;
-    height: 52px;
+    max-width: 150px;
     background-color: #0047D0;
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 14px;
     text-align: center;
-    border-radius: 26px;
+    border-radius: 40px;
     transition: all 0.2s linear;
+    text-decoration: none;
+    padding: 20px;
+    display:block;
+    margin-top: 20px;
 }
 
 .button-primary:hover{
     width: 170px;
-    height: 52px;
     background-color:aquamarine;
     color:  #0047D0;
     font-family: 'Raleway', sans-serif;
@@ -424,6 +426,7 @@ footer{
     border-radius: 26px;
     font-size: 14px;
     transition: all 0.2s linear;
+    
 }
 
 .button-primary::after{
@@ -528,6 +531,7 @@ button{
         vertical-align: middle;
         background-color: none;
         padding: 0;
+        width: auto;
     }
 }
 
@@ -540,6 +544,8 @@ button{
         vertical-align: middle;
         background-color: none;
         padding: 0;
+        width: auto;
+        display: inline-block;
     }
 }
 
@@ -662,6 +668,7 @@ button{
     overflow: hidden;
     margin-bottom: 15px;
     overflow: hidden;
+    background: purple;
   }
 
 .project-thumb{
@@ -903,6 +910,11 @@ button{
     margin-top: 8px;
   }
 
+  a{
+      text-decoration: none;
+  }
+
+
   #pulsecircle{
     width: 16px;
     height: 16px;
@@ -991,11 +1003,11 @@ button{
 @media (min-width: 640px) {
     .card-block-half{
         width: 47%;
-        background-color: white;
+        
         display: inline-block;
         vertical-align: top;
         text-align: left;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
         cursor: pointer;
     }
 }
@@ -1006,7 +1018,8 @@ button{
         background-color: white;
         vertical-align: top;
         text-align: left;
-        margin-bottom: 60px;
+        display: block;
+        margin-bottom: 80px;
        
     }
 }
