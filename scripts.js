@@ -43,7 +43,7 @@ function outFunc() {
 //          document.querySelector(".navGroup").setAttribute("id", "visibleNav");
 //     }
 
-//     // Update the old value
+//     // Update the old value 
 //     oldValue = newValue;
 // });
 
