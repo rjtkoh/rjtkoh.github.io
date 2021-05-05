@@ -65,13 +65,13 @@ window.addEventListener('scroll', function (){
     if(currentY > 230 && currentY < (cvY-520)) {
        sideContent.setAttribute("id", "sidecontentAlt");
        titleShrink.setAttribute("id", "h1Alt");
-       projectDesc.style.display = "none";
+      //  projectDesc.style.display = "none";
        sideContent.style.display = "block";
       } 
       else if (currentY < 230 && currentY < (cvY-520)) {
         sideContent.removeAttribute("id", "sidecontentAlt");
         titleShrink.removeAttribute("id", "h1Alt");
-        projectDesc.style.display = "block";
+        // projectDesc.style.display = "block";
         sideContent.style.display = "block";
       } 
       else if (currentY > (cvY-520)){
