@@ -74,7 +74,7 @@ window.addEventListener('scroll', function (){
         projectDesc.style.display = "block";
         sideContent.style.display = "block";
       } 
-      else if (currentY > (cvY-4520)){
+      else if (currentY > (cvY-520)){
           sideContent.style.display = "none";
       }
   
