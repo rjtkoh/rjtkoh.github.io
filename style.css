@@ -98,13 +98,27 @@ body{
   }
 
 
+/* SIDEBAR FIX */
+
+
 @media (min-width: 768px) {
     .third{
-        width: 32%;
+        width: 30%;
         height: 100%;
         display: inline-block;
         float: left;
-        
+
+    }
+
+    #h1Alt{
+        font-size: 54px;
+        transition: all 0.1s linear;
+    }
+
+    #sidecontentAlt{
+        position: fixed;
+        top: 90px;
+        width: 18%;
     }
 }
 
