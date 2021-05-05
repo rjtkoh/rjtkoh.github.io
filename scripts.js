@@ -66,17 +66,17 @@ window.addEventListener('scroll', function (){
        sideContent.setAttribute("id", "sidecontentAlt");
        titleShrink.setAttribute("id", "h1Alt");
       //  projectDesc.style.display = "none";
-       sideContent.style.display = "block";
+      //  sideContent.style.display = "block";
       } 
       else if (currentY < 230 && currentY < (cvY-520)) {
         sideContent.removeAttribute("id", "sidecontentAlt");
         titleShrink.removeAttribute("id", "h1Alt");
         // projectDesc.style.display = "block";
-        sideContent.style.display = "block";
+        // sideContent.style.display = "block";
       } 
-      else if (currentY > (cvY-520)){
-          sideContent.style.display = "none";
-      }
+      // else if (currentY > (cvY-520)){
+      //     sideContent.style.display = "none";
+      // }
   
     }    
   )
