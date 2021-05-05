@@ -28,24 +28,24 @@ function outFunc() {
 
 // SHOW HIDE NAV
 
-let oldValue = 0;
+// let oldValue = 0;
 
-window.addEventListener('scroll', function(e){
+// window.addEventListener('scroll', function(e){
 
-    // Get the new Value
-    newValue = window.pageYOffset;
+//     // Get the new Value
+//     newValue = window.pageYOffset;
 
-    //Subtract the two and conclude
-    if(oldValue - newValue < 0 && window.scrollY>300){
-      document.querySelector(".navGroup").setAttribute("id", "hiddenNav");
+//     //Subtract the two and conclude
+//     if(oldValue - newValue < 0 && window.scrollY>300){
+//       document.querySelector(".navGroup").setAttribute("id", "hiddenNav");
       
-    } else if(oldValue - newValue > 0 ){
-         document.querySelector(".navGroup").setAttribute("id", "visibleNav");
-    }
+//     } else if(oldValue - newValue > 0 ){
+//          document.querySelector(".navGroup").setAttribute("id", "visibleNav");
+//     }
 
-    // Update the old value
-    oldValue = newValue;
-});
+//     // Update the old value
+//     oldValue = newValue;
+// });
 
 
 // SIDE BAR FIX
