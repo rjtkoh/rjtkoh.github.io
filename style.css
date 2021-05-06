@@ -20,25 +20,15 @@
     }
 }
 
-@media (min-width: 960px) {
-    h3 {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        font-size: 34px;
-        margin-top: 15px;
-        color: #3D3A4B;
-    }
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 15px;
+    color: #3D3A4B;
 }
 
-@media (max-width: 960px) {
-    h3 {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        font-size: 26px;
-        margin-top: 15px;
-        color: #3D3A4B;
-    }
-}
 
 
 
