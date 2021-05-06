@@ -11,19 +11,17 @@ var cvY = cvSection.offsetTop;
   console.log('cv scroll '+ cvY);
  
 
-  if(currentY > 230 && currentY < (cvY-500)) {
+  if(currentY > 230 && currentY < (cvY-600)) {
      sideContent.setAttribute("id", "sidecontentAlt");
      titleShrink.setAttribute("id", "h1Alt");
-     projectDesc.style.display = "none";
     sideContent.style.visibility = "visible";
     } 
-    else if (currentY < 230 && currentY < (cvY-500)) {
+    else if (currentY < 230 && currentY < (cvY-600)) {
       sideContent.removeAttribute("id", "sidecontentAlt");
       titleShrink.removeAttribute("id", "h1Alt");
-      projectDesc.style.display = "block";
-    sideContent.style.visibility = "visible";
+      sideContent.style.visibility = "visible";
     } 
-    else if (currentY > (cvY-500)){
+    else if (currentY > (cvY-600)){
         sideContent.style.visibility = "hidden";
     }
 
