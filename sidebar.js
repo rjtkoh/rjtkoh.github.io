@@ -14,17 +14,17 @@ var cvY = cvSection.offsetTop;
   if(currentY > 230 && currentY < (cvY-500)) {
      sideContent.setAttribute("id", "sidecontentAlt");
      titleShrink.setAttribute("id", "h1Alt");
-    //  projectDesc.style.display = "none";
-     sideContent.style.display = "block";
+     projectDesc.style.display = "none";
+    sideContent.style.visibility = "visible";
     } 
     else if (currentY < 230 && currentY < (cvY-500)) {
       sideContent.removeAttribute("id", "sidecontentAlt");
       titleShrink.removeAttribute("id", "h1Alt");
-    //   projectDesc.style.display = "block";
-      sideContent.style.display = "block";
+      projectDesc.style.display = "block";
+    sideContent.style.visibility = "visible";
     } 
     else if (currentY > (cvY-500)){
-        sideContent.style.display = "none";
+        sideContent.style.visibility = "hidden";
     }
 
   }    
