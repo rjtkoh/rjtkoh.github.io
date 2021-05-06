@@ -23,7 +23,7 @@ var cvY = cvSection.offsetTop;
       projectDesc.style.display = "block";
       sideContent.style.display = "block";
     } 
-    else if (currentY > (cvY-400)){
+    else if (currentY > (cvY-500)){
         sideContent.style.display = "none";
     }
 
