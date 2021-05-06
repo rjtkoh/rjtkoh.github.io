@@ -6,9 +6,6 @@ const projectDesc = document.querySelector('h3');
 const cvSection = document.querySelector('.cv-wrapper');
 var currentY= window.pageYOffset;
 var cvY = cvSection.offsetTop;
-
-  console.log('currentY '+ currentY);
-  console.log('cv scroll '+ cvY);
  
 
   if(currentY > 230 && currentY < (cvY-600)) {
