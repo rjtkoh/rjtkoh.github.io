@@ -304,13 +304,7 @@ footer{
         transition: all 0.2s linear;
     }
 
-    .navitems:hover:after{
-        content:'';
-        width: 100px;
-        height: 40px;
-        background-color: aquamarine;
-        transition: all 0.2s linear;
-    }
+
 
     .footernavicon{
         display:none;
@@ -401,6 +395,8 @@ footer{
         margin: 0;
         display: flex;
         justify-content: space-around;
+        box-shadow: 0px -5px 23px rgba(0, 0, 0, 0.1);
+
     }
 }
 
@@ -423,34 +419,102 @@ footer{
     margin-top: 20px;
 }
 
-.button-primary:hover{
-    width: 170px;
-    background-color:aquamarine;
-    color:  #0047D0;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    text-align: center;
-    border-radius: 26px;
-    font-size: 14px;
-    transition: all 0.2s linear;
+@media (min-width: 960px) {
+    .button-primary:hover{
+        width: 170px;
+        background-color:aquamarine;
+        color:  #0047D0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        border-radius: 26px;
+        font-size: 14px;
+        transition: all 0.2s linear;
+        
+    }
     
-}
+    .button-primary::after{
+        content: "  →";
+        margin-left: -15px;
+        display: inline-block;
+        transition: all 0.2s linear;
+        opacity: 0;
+    }
+    
+    .button-primary:hover::after{
+        content: "  →";
+        margin-left: 10px;
+        display: inline-block;
+        opacity: 1;
+        transition: all 0.2s linear;
+    }
 
-.button-primary::after{
-    content: "  →";
-    margin-left: -15px;
-    display: inline-block;
-    transition: all 0.2s linear;
-    opacity: 0;
-}
+    .CTAarrow:hover{
+        display:inline-block;
+    }
 
-.button-primary:hover::after{
-    content: "  →";
-    margin-left: 10px;
-    display: inline-block;
-    opacity: 1;
-    transition: all 0.2s linear;
-}
+    .button-ghost:hover{
+        background: aquamarine;
+        border-style: solid;
+        border-width: 2px;
+        border-color: aquamarine;
+        transition: all 0.2s linear;
+    }
+
+    .button-social:hover{
+        width: 52px;
+        height: 52px;
+        border-radius: 26px;
+        margin-bottom: 0;
+        padding-top: -52px;
+        background-color: aquamarine;
+        transition: all 0.2s linear;
+    }
+    .more-link::after{
+        vertical-align: middle;
+        background-color: none;
+        content:'';
+        width: 0px;
+        height: 40px;
+        background-color: none;
+        display: block;
+        margin-top: -40px;
+        transition: all 0.2s linear;
+    }
+    
+    .more-link:hover:after{
+        vertical-align: middle;
+        background-color: none;
+        content:'';
+        width: 100%;
+        height: 40px;
+        background-color: aquamarine;
+        display: block;
+        margin-top: -40px;
+        transition: all 0.2s linear;
+    }
+
+    #breadcrumb:hover:after{
+        content:'';
+        width: 80px;
+        height: 40px;
+        background-color: aquamarine;
+        display: block;
+        margin-top: -40px;
+        transition: all 0.2s linear;
+    }
+
+    .navitems:hover:after{
+        content:'';
+        width: 100px;
+        height: 40px;
+        background-color: aquamarine;
+        transition: all 0.2s linear;
+    }
+  } /* end desktop hovers */
+  
+
+
 
 .button-primary:active{
     transform: scale(.95);
@@ -462,9 +526,7 @@ footer{
     display:none;
 }
 
-.CTAarrow:hover{
-    display:inline-block;
-}
+
 
 .button-ghost{
     height: 52px;
@@ -484,16 +546,6 @@ footer{
     user-select: all;
 }
 
-.button-ghost:hover{
-    background: aquamarine;
-    border-style: solid;
-    border-width: 2px;
-    border-color: aquamarine;
-    transition: all 0.2s linear;
-
-}
-
-
 .button-ghost:active{
     transform: scale(.94);
     transition: all 0.1s linear;
@@ -505,17 +557,6 @@ footer{
     height: 52px;
     border-radius: 26px;
     background-color: #00226E;
-    transition: all 0.2s linear;
-}
-
-
-.button-social:hover{
-    width: 52px;
-    height: 52px;
-    border-radius: 26px;
-    margin-bottom: 0;
-    padding-top: -52px;
-    background-color: aquamarine;
     transition: all 0.2s linear;
 }
 
@@ -559,29 +600,7 @@ button{
 
 
 
-.more-link::after{
-    vertical-align: middle;
-    background-color: none;
-    content:'';
-    width: 0px;
-    height: 40px;
-    background-color: none;
-    display: block;
-    margin-top: -40px;
-    transition: all 0.2s linear;
-}
 
-.more-link:hover:after{
-    vertical-align: middle;
-    background-color: none;
-    content:'';
-    width: 100%;
-    height: 40px;
-    background-color: aquamarine;
-    display: block;
-    margin-top: -40px;
-    transition: all 0.2s linear;
-}
 
 #breadcrumb{
     font-family: 'Open Sans', sans-serif;
@@ -601,15 +620,7 @@ button{
     transition: all 0.2s linear;
 }
 
-#breadcrumb:hover:after{
-    content:'';
-    width: 80px;
-    height: 40px;
-    background-color: aquamarine;
-    display: block;
-    margin-top: -40px;
-    transition: all 0.2s linear;
-}
+
 
 
 
