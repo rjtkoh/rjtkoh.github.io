@@ -420,7 +420,7 @@ footer{
 }
 
 @media (min-width: 960px) {
-    .button-primary:hover{
+    /* .button-primary:hover{
         width: 170px;
         background-color:aquamarine;
         color:  #0047D0;
@@ -510,8 +510,9 @@ footer{
         height: 40px;
         background-color: aquamarine;
         transition: all 0.2s linear;
-    }
-  } /* end desktop hovers */
+    } */
+  } 
+  /* end desktop hovers */
   
 
 
