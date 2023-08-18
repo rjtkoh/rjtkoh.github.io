@@ -28,7 +28,7 @@ function outFunc() {
 
 // SHOW HIDE NAV
 
-let oldValue = 0;
+// let oldValue = 0;
 
 // window.addEventListener('scroll', function(e){
 
