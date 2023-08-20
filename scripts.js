@@ -48,6 +48,19 @@ function outFunc() {
 // });
 
 
+let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    document.getElementById("visibleNav").classList.remove("hide");
+  } else {
+    document.getElementById("visibleNav").classList.add("hide");
+  }
+  prevScrollPos = currentScrollPos;
+}
+
+
 // SIDE BAR FIX
 
 // window.addEventListener('scroll', function (){
