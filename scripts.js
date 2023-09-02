@@ -26,26 +26,8 @@ function outFunc() {
 }
 
 
-// SHOW HIDE NAV
 
-// let oldValue = 0;
 
-// window.addEventListener('scroll', function(e){
-
-//     // Get the new Value
-//     newValue = window.pageYOffset;
-
-//     //Subtract the two and conclude
-//     if(oldValue - newValue < 0 && window.scrollY>300){
-//       document.querySelector(".navGroup").setAttribute("id", "hiddenNav");
-      
-//     } else if(oldValue - newValue > 0 ){
-//          document.querySelector(".navGroup").setAttribute("id", "visibleNav");
-//     }
-
-//     // Update the old value 
-//     oldValue = newValue;
-// });
 
 
 let prevScrollPos = window.pageYOffset;
@@ -54,42 +36,13 @@ window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollPos > currentScrollPos) {
     document.getElementById("visibleNav").classList.remove("hide");
+  }
+    else if(prevScrollPos <= 0){
+      document.getElementById("visibleNav").classList.remove("hide");
+    
   } else {
     document.getElementById("visibleNav").classList.add("hide");
   }
   prevScrollPos = currentScrollPos;
 }
 
-
-// SIDE BAR FIX
-
-// window.addEventListener('scroll', function (){
-//   const sideContent = document.querySelector('.third');
-//   const titleShrink = document.querySelector('h1');
-//   const projectDesc = document.querySelector('h3');
-//   const cvSection = document.querySelector('.cv-wrapper');
-//   var currentY= window.pageYOffset;
-//   var cvY = cvSection.offsetTop;
-  
-//     console.log('currentY '+ currentY);
-//     console.log('cv scroll '+ cvY);
-   
-  
-//     if(currentY > 230 && currentY < (cvY-520)) {
-//        sideContent.setAttribute("id", "sidecontentAlt");
-//        titleShrink.setAttribute("id", "h1Alt");
-//        projectDesc.style.display = "none";
-//        sideContent.style.display = "block";
-//       } 
-//       else if (currentY < 230 && currentY < (cvY-520)) {
-//         sideContent.removeAttribute("id", "sidecontentAlt");
-//         titleShrink.removeAttribute("id", "h1Alt");
-//         projectDesc.style.display = "block";
-//         sideContent.style.display = "block";
-//       } 
-//       else if (currentY > (cvY-520)){
-//           sideContent.style.display = "none";
-//       }
-  
-//     }    
-//   )
