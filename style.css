@@ -273,6 +273,7 @@ footer{
         float: left;
         cursor: pointer;
         transition: all 0.2s linear;
+        width: 50px;
     }
 
     #RKlogo:hover{
