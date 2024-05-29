@@ -234,7 +234,8 @@ footer{
     height: 52px;
     margin: 50px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 
 .divider{
