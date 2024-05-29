@@ -30,19 +30,19 @@ function outFunc() {
 
 
 
-let prevScrollPos = window.pageYOffset;
+// let prevScrollPos = window.pageYOffset;
 
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollPos > currentScrollPos) {
-    document.getElementById("visibleNav").classList.remove("hide");
-  }
-    else if(prevScrollPos <= 0){
-      document.getElementById("visibleNav").classList.remove("hide");
+// window.onscroll = function() {
+//   let currentScrollPos = window.pageYOffset;
+//   if (prevScrollPos > currentScrollPos) {
+//     document.getElementById("visibleNav").classList.remove("hide");
+//   }
+//     else if(prevScrollPos <= 0){
+//       document.getElementById("visibleNav").classList.remove("hide");
     
-  } else {
-    document.getElementById("visibleNav").classList.add("hide");
-  }
-  prevScrollPos = currentScrollPos;
-}
+//   } else {
+//     document.getElementById("visibleNav").classList.add("hide");
+//   }
+//   prevScrollPos = currentScrollPos;
+// }
 
