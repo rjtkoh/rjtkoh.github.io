@@ -14,11 +14,12 @@
         <title>Punters</title>
 </head>
 
-<nav id="visibleNav" class="navGroup">  
-    <img onclick="location.href='index.html';" id="RKlogo" src="images/Rlogo.svg" alt="" srcset="">
+<nav id="navbar" class="navGroup"> 
+    <img onclick="location.href='index.html';" id="RKlogo" src="images/Rlogo2024.svg" alt="" srcset="">
+
     <ul id="navlist">
-        <li onclick="location.href='index.html';" id="navitem-home-mobile"class="navitems">
-            <img class="footernavicon" src="images/icon-home-default.svg" alt="" srcset="">
+        <li onclick="location.href='index.html';" id="navitem-home-mobile" class="navitems">
+            <img class="footernavicon" src="images/icon-home-selected.svg" alt="" srcset="">
             Home</li>
 
         <li onclick="location.href='work.html';" class="navitems">
@@ -114,7 +115,7 @@
                 <button class="more-link" onclick="location.href='odds.html';">Next<img style="vertical-align: middle; margin-left: 7px;" src="images/icon-arrow-right.svg" alt="" srcset=""></button>
             </div>
 
-            <div class="divider"></div>
+            
             
         
         </div>  
@@ -128,15 +129,23 @@
 
 <footer>
 
-<h2 style = "text-align: center; margin-bottom: 30px;">Get in touch</h2>
-    <div class="tooltip" id="tooltiphidden">copy to clipboard</div>
-    <div class="triangle"></div>
-    <button id="btnCopy" onclick= "copyStuff()" onmouseenter="enterFunc()" onmouseout="outFunc()" class="button-ghost">rjtkoh@gmail.com</button>
-    <div id="socialmedia">
-        <button onclick="location.href='https://au.linkedin.com/in/robert-koh-a13b7979'" class="button-social">
-            <img src="images/icon-linkedin.svg" alt="" srcset="">
-        </button>
-    </div>
+        <div class="footerInner">
+            <h6>Contact</h6>
+            <div class="contactMethods">
+                <div class="contactItem">
+                    <img src="images/ic-email.svg" alt="" srcset="">
+                    <span class="contactText">rjtkoh@gmail.com</span>
+                </div>
+
+                <a href="https://au.linkedin.com/in/robert-koh-a13b7979" class="contactItem">
+                    <img src="images/ic-linkedin.svg" alt="" srcset="">
+                    <span class="contactText">Linkedin</span>
+                </a>
+
+            </div>
+        </div>
 
 </footer>
+
+
 </html>

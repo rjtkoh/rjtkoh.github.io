@@ -2,7 +2,8 @@
 // COPY TO CLIPBOARD
 function copyStuff(){
   document.getElementById("btnCopy");
-  document.execCommand("Copy");
+  // document.execCommand("Copy");
+  document.clipboard.writeText('text to be copied');
   document.querySelector(".tooltip").setAttribute("id", "tooltipcopied");
   document.querySelector(".triangle").setAttribute("id", "trianglecopied");
   document.getElementById("tooltipcopied").innerHTML = "Copied!";
@@ -26,23 +27,23 @@ function outFunc() {
 }
 
 
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('navbar');
+
+  if (window.scrollY > 0) {
+    navbar.classList.remove('clear');
+    navbar.classList.add('white');
+  } else {
+    navbar.classList.remove('white');
+    navbar.classList.add('clear');
+  }
+});
 
 
 
 
-// let prevScrollPos = window.pageYOffset;
 
-// window.onscroll = function() {
-//   let currentScrollPos = window.pageYOffset;
-//   if (prevScrollPos > currentScrollPos) {
-//     document.getElementById("visibleNav").classList.remove("hide");
-//   }
-//     else if(prevScrollPos <= 0){
-//       document.getElementById("visibleNav").classList.remove("hide");
-    
-//   } else {
-//     document.getElementById("visibleNav").classList.add("hide");
-//   }
-//   prevScrollPos = currentScrollPos;
-// }
+
+
+
 

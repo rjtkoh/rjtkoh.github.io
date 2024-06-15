@@ -1,16 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>icon-home-default</title>
-    <defs>
-        <polygon id="path-1" points="0 0 24.639 0 24.639 24.6388 0 24.6388"></polygon>
-    </defs>
-    <g id="icon-home-default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-3" transform="translate(4.000000, 4.000000)">
-            <mask id="mask-2" fill="white">
-                <use xlink:href="#path-1"></use>
-            </mask>
-            <g id="Clip-2"></g>
-            <path d="M18.479,0 L12.32,0 L0,0 L0,24.639 L12.32,24.639 L24.639,24.639 L12.32,12.319 L18.479,12.319 C21.881,12.319 24.639,9.562 24.639,6.16 C24.639,2.758 21.881,0 18.479,0 M18.479,2 C20.773,2 22.639,3.866 22.639,6.16 C22.639,8.453 20.773,10.319 18.479,10.319 L12.32,10.319 L7.491,10.319 L10.905,13.733 L19.81,22.639 L12.32,22.639 L2,22.639 L2,2 L12.32,2 L18.479,2" id="Fill-1" fill="#0040D0" mask="url(#mask-2)"></path>
-        </g>
-    </g>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 27C22.0751 27 27 22.0751 27 16C27 9.92487 22.0751 5 16 5C9.92487 5 5 9.92487 5 16C5 22.0751 9.92487 27 16 27ZM16 29C23.1797 29 29 23.1797 29 16C29 8.8203 23.1797 3 16 3C8.8203 3 3 8.8203 3 16C3 23.1797 8.8203 29 16 29ZM11.4417 10.7661H16.1689V21.2336H11.4417V10.7661ZM18.8702 16.1687C20.3621 16.1687 21.5715 14.9593 21.5715 13.4674C21.5715 11.9755 20.3621 10.7661 18.8702 10.7661C17.3784 10.7661 16.1689 11.9755 16.1689 13.4674C16.1689 14.9593 17.3784 16.1687 18.8702 16.1687Z" fill="#3206FF"/>
 </svg>

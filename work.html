@@ -14,10 +14,11 @@
         <title>Work</title>
 </head>
 
-<nav id="visibleNav" class="navGroup">  
-    <img onclick="location.href='index.html';" id="RKlogo" src="images/Rlogo.svg" alt="" srcset="">
+<nav id="navbar" class="navGroup"> 
+    <img onclick="location.href='index.html';" id="RKlogo" src="images/Rlogo2024.svg" alt="" srcset="">
+
     <ul id="navlist">
-        <li onclick="location.href='index.html';" id="navitem-home-mobile"class="navitems">
+        <li onclick="location.href='index.html';" id="navitem-home-mobile" class="navitems">
             <img class="footernavicon" src="images/icon-home-default.svg" alt="" srcset="">
             Home</li>
 
@@ -25,7 +26,7 @@
             <img class="footernavicon" src="images/icon-work-selected.svg" alt="" srcset="">
             Work</li>
 
-        <li onclick="location.href='about.html';" class="navitems">
+        <li onclick="location.href='about.html';"  class="navitems">
             <img class="footernavicon" src="images/icon-about-default.svg" alt="" srcset="">
             About</li>
 
@@ -50,7 +51,7 @@
                     </div>
                     <h4>VCAT</h4>
                     <p>Userflow and micro-interactions for a hearings look-up and payments portal</p>
-                    <div class="button-primary">View case study</div>
+                    <div class="pill-button">View case study</div>
                 </a>
 
                 <a class="card-block-half" href='happyhabit.html'>
@@ -59,7 +60,7 @@
                     </div>
                     <h4>The Happy Habit</h4>
                     <p >End to end design for a React native meditation app</p>
-                    <div class="button-primary">View case study</div>
+                    <div class="pill-button">View case study</div>
                 </a>
 
                 <a class="card-block-half" href='zyppyz.html'>
@@ -68,16 +69,16 @@
                     </div>
                     <h4>Zyppyz</h4>
                     <p>UX→UI for a parking marketplace targeted towards schools.</p>
-                    <div class="button-primary">View case study</div >
+                    <div class="pill-button">View case study</div >
                 </a>
 
-                <a class="card-block-half" href='hotondo.html'>
+                <a class="card-block-half" href='envirosuite.html'>
                     <div class = "thumbholder">  
-                        <img class ="project-thumb" src="images/hotondo-hero.png" alt="" srcset="">
+                        <img class ="project-thumb" src="images/EVthumb.png" alt="" srcset="">
                     </div>
-                    <h4>Hotondo Homes</h4>
-                    <p>UX strategy and user research for an internal system</p>
-                    <div class="button-primary">View case study</div >
+                    <h4>Envirosuite</h4>
+                    <p>ES5 design system & interaction prototypes</p>
+                    <div class="pill-button">View case study</div >
                 </a>
 
                 <a class="card-block-half" href='seek.html'>
@@ -86,17 +87,17 @@
                     </div>
                     <h4>Seek</h4>
                     <p>Interaction design across various features</p>
-                    <div class="button-primary">View case study</div>
+                    <div class="pill-button">View case study</div>
                 </a>
 
-                <a class="card-block-half" href='lesverbes.html'>
+                <!-- <a class="card-block-half" href='lesverbes.html'>
                     <div class = "thumbholder">  
                         <img class ="project-thumb" src="images/les-verbes-cover.png" alt="" srcset="">
                     </div>
                     <h4>Les Verbes</h4>
                     <p>UI and interaction design for a French learning app</p>
-                    <div class="button-primary">View case study</div>
-                </a>
+                    <div class="pill-button">View case study</div>
+                </a> -->
 
                 <a class="card-block-half" href='punters.html'>
                     <div class = "thumbholder">  
@@ -104,7 +105,7 @@
                     </div>
                     <h4>Punters</h4>
                     <p>Betting performance tracker</p>
-                    <div class="button-primary">View case study</div>
+                    <div class="pill-button">View case study</div>
                 </a>
 
                 <a class="card-block-half" href='odds.html'>
@@ -113,7 +114,7 @@
                     </div>
                     <h4>Odds</h4>
                     <p>Responsive website relaunch for betting odds comparison platform</p>
-                    <div class="button-primary">View case study</div>
+                    <div class="pill-button">View case study</div>
                 </a>
 
                 <a class="card-block-half" href='dailymandarin.html'>
@@ -122,12 +123,14 @@
                     </div>
                     <h4>Daily Mandarin</h4>
                     <p>An app for practicing Chinese character writing</p>
-                    <div class="button-primary">View case study</div>
+                    <div class="pill-button">View case study</div>
                 </a>
 
                 
 
-                <!-- <div class="card-block-half"></div> -->
+                
+
+                <div class="card-block-half"></div>
 
 
             </div>
@@ -136,7 +139,7 @@
 
 
         <div class="cv-wrapper">
-            <div class="divider"></div>
+        
             
 
         </div>  
@@ -149,15 +152,21 @@
 
 <footer>
 
-<h2 style = "text-align: center; margin-bottom: 30px;">Get in touch</h2>
-    <div class="tooltip" id="tooltiphidden">copy to clipboard</div>
-    <div class="triangle"></div>
-    <button id="btnCopy" onclick= "copyStuff()" onmouseenter="enterFunc()" onmouseout="outFunc()" class="button-ghost">rjtkoh@gmail.com</button>
-    <div id="socialmedia">
-        <button onclick="location.href='https://au.linkedin.com/in/robert-koh-a13b7979'" class="button-social">
-            <img src="images/icon-linkedin.svg" alt="" srcset="">
-        </button>
-    </div>
+        <div class="footerInner">
+            <h6>Contact</h6>
+            <div class="contactMethods">
+                <div class="contactItem">
+                    <img src="images/ic-email.svg" alt="" srcset="">
+                    <span class="contactText">rjtkoh@gmail.com</span>
+                </div>
+
+                <a href="https://au.linkedin.com/in/robert-koh-a13b7979" class="contactItem">
+                    <img src="images/ic-linkedin.svg" alt="" srcset="">
+                    <span class="contactText">Linkedin</span>
+                </a>
+
+            </div>
+        </div>
 
 </footer>
 </html>

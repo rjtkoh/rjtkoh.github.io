@@ -1,22 +1,260 @@
+/* HOME HERO */
+
+.homeHero{
+    width: 100%;
+    background: rgb(238,233,244);
+    background: linear-gradient(220deg, rgba(238,233,244,1) 0%, rgba(241,236,233,1) 100%);
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/* LOGO CAROUSEL */
+
+
+
+.carousel-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+  
+    .carouselBrackets{
+  height: 72px;
+  max-width: 100%;
+  overflow: hidden;
+ 
+  position: relative;
+  top: -30px;
+  border-radius: 8px;
+}
+  
+  
+  .carousel {
+    overflow: hidden;
+    max-width: 100%;
+        position: relative;
+}
+  
+  .carousel-slide {
+    min-width: 1302px;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    height: 72px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1302px); /* Adjust this value based on the total width of logos */
+    }
+}
+  
+  
+}
+
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  
+  .carouselBrackets{
+  height: 120px;
+  max-width: 1536px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  top: -60px;
+}
+  
+  .carousel {
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .carousel-slide {
+    min-width: 2170px;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-2170px); /* Adjust this value based on the total width of logos */
+    }
+}
+  
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    #RobertKoh_name{
+        font-size: 60px;
+    }
+
+    #name_description{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #homeHeroImg{
+        object-fit: contain;
+        width: 100%;
+        /* height:50vh */
+    }
+
+    .homeHeroWrapper{
+        width: 100%;
+        padding: 40px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+  }
+
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    #name_description{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #RobertKoh_name{
+        font-size: 80px;
+        line-height: 95%;
+    }
+
+    #homeHeroImg{
+        object-fit: contain;
+        width: 50%;
+    }
+
+    .homeHeroWrapper{
+        width: 1440px;
+        height: 400px;
+        padding: 100px 20px 0 20px;
+        display: flex;
+    
+    }
+}
+
+
+
+
+/* WORK CARDS */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-column-gap: 32px;
+  }
+  
+  .card{
+    transition: box-shadow .3s;
+    display: flex;
+    flex-direction: column;
+     text-decoration:none;
+    color: #3E3E3E;
+    margin-bottom: 3em;
+    gap: .5em;
+  }
+  
+  .articleThumb{
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    
+    /* margin: 1em 0; */
+    transition: all 0.1s linear;
+  }
+
+
+.articleThumb:hover{
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.13);
+    transition: all 0.1s linear;
+}
+
+.thumbholder{
+    border-radius: 10px;
+    background: blue;
+    margin-bottom: 1em;
+    overflow: hidden;
+    height: 230px;
+}
+  
+  
+  .categorylabel{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    background: #EBE6FF;
+    font-weight: 600;
+    width: auto;
+    padding: .4em;
+    border-radius: 4px;
+  }
+  
+  .labelholder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    margin-bottom: .5em;
+  }
+
+
+
+
 /* TYPOGRAPHY */
 
 @media (min-width: 960px) {
     h1{
-        font-family: 'Raleway', sans-serif;
-        font-weight: 800;
+        font-family: 'Lora', sans-serif;
+        font-weight: 500;
         font-size: 75px;
         margin: 0;
-        color: #3D3A4B;
+        color: #3E3E3E;
     }
 }
 
 @media (max-width: 960px) {
     h1{
-        font-family: 'Raleway', sans-serif;
-        font-weight: 800;
+        font-family: 'Lora', sans-serif;
+        font-weight: 500;
         font-size: 54px;
         margin: 0;
-        color: #3D3A4B;
+        color: #3E3E3E;
     }
 }
 
@@ -26,42 +264,52 @@ h3 {
     font-weight: 400;
     font-size: 26px;
     margin-top: 15px;
-    color: #3D3A4B;
+    color: #3E3E3E;
 }
-
-
-
-
-
 
 
 h2{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
     font-size: 48px;
     margin: 0;
-    color: #3D3A4B;
-    
+    color: #3E3E3E;
+    line-height: 110%;
 }
 
 
-
-
 h4 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: #3D3A4B;
+    margin-bottom: 0px;
+    color: #3E3E3E;
+}
+
+h5 {
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: #3E3E3E;
+}
+
+h6 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #3E3E3E;
 }
 
 p, li{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    margin-top: 10px;
-    color: #3D3A4B;
+    color: #3E3E3E;
+    margin-top: .7em;
+
 }
 
 .caption{
@@ -73,6 +321,9 @@ p, li{
     text-align: center;
   }
 
+
+
+
 /* GLOBAL */
 
 body{
@@ -82,7 +333,7 @@ body{
 
 
 .wrapper{
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -142,101 +393,116 @@ body{
 
 
 
-/* CV DOWNLOAD SECTION */
-@media (min-width: 768px) {
-    #CV-section{
-        height: 400px;
-        display: block;
-    }
-  }
 
-  @media (max-width: 768px) {
-    #CV-section{
-        display: none;
-    }
-  }
-
-
-#CV-section{
-    height: 400px;
-}
-
-.download-icons{
-    margin-left: 30px;
-    width: 80px;
-}
-
-.download-textgroup{
-    margin-left: 30px;
-    width: 100%;
-    padding-right: 30px;
-}
-
-.download-title{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    color: #0047D0;
-}
-
-
-@media (min-width: 1024px) {
-    .download-button{
-        width: 48%;
-        min-height: 100px;
-        background-color: #F8F8F9;
-        display: flex;
-        align-items: center;
-        text-align: left;
-        transition: all 0.2s linear;
-        border-style: solid;
-        border-width: 0px;
-        border-color: #0047D0; 
-        padding: 30px 0;
-        text-decoration: none;
-        transition: all 0.2s linear;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    .download-button{
-        width: 48%;
-        height: 200px;
-        background-color: #F8F8F9;
-        display: flex;
-        align-items: center;
-        text-align: left;
-        transition: all 0.2s linear;
-    }
-  }
-
-.download-button:hover{
-    background-color: #7fffd4;
-}
-
-.download-button:active{
-    transform: scale(.95);
-    transition: all 0.1s linear;
-    background-color: #E7EEFF;
-}
 
 /* FOOTER */
 
-footer{
-    height: 400px;
-    margin: 0 auto;
-    padding: 0 !important;
-    text-align: center;
+/* MOBILE */
+@media (max-width: 768px) {
+
+
+    .footerInner{
+        display: flex;
+        flex-direction: column;
+        margin: 1em 0 6em 0;
+        justify-content: space-between;
+        gap: 1em;
+        background: rgb(238,233,244);
+    background: linear-gradient(220deg, rgba(238,233,244,1) 0%, rgba(241,236,233,1) 100%);
+        border-radius: 8px;
+        padding: 1.8em 24px 1.8em 24px;
+
+    }
+    
+    .contactMethods{
+    
+        display: flex;
+        flex-direction: column;
+       
+    
+    }
+    
+    .contactText{
+        font-family: 'Lora', sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        text-decoration: none;
+        color: #3E3E3E;
+    }
+    
+    .contactItem {
+       height: 70px;
+       display: flex;
+       align-items: center;
+       gap: .7em;
+    }
+
+    footer{
+        padding: 0 20px;
+       
+    }
+
+    
 }
 
-#socialmedia{
-    width: 220px;
-    height: 52px;
-    margin: 50px auto;
-    display: flex;
-    justify-content: center;
 
+
+
+
+/* DESKTOP */
+@media (min-width: 768px) {
+
+
+    footer{
+        padding: 0 20px;
+       
+    }
+
+    .footerInner{
+        display: flex;
+        flex-direction: row;
+        padding: 24px;
+        justify-content: space-between;
+        background: rgb(238,233,244);
+        background: linear-gradient(220deg, rgba(238,233,244,1) 0%, rgba(241,236,233,1) 100%);
+        max-width: 1440px;
+        margin: 4em auto 1em auto;
+        border-radius: 8px;
+
+    }
+    
+    .contactMethods{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    
+    }
+    
+    .contactText{
+        font-family: 'Lora', sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        text-decoration: none;
+        color: #3E3E3E;
+    }
+    
+    .contactItem {
+       height: 70px;
+       display: flex;
+       align-items: center;
+       gap: .7em;
+    }
+    
 }
+
+
+
+
+
+
+
+
+
 
 .divider{
     width: 100%;
@@ -248,24 +514,28 @@ footer{
 
 /* NAVIGATION */
 
-
-/* #visibleNav{
-    opacity: 1;
-    transition: all 0.2s linear;
-  } */
-
   .hide {
     opacity: 0;
     transition: opacity 0.3s;
   }
+
+
+
   
-  /* #hiddenNav{
-    opacity: 0;
-    transition: all 0.2s linear;
-  } */
 
 
 @media(min-width: 768px) {
+
+
+    .clear {
+        background-color: transparent;
+      }
+    
+      .white {
+        background: rgb(255,255,255, 0.8);
+        border-bottom: 1px solid #d6d6d6;
+      }
+    
 
     #RKlogo{
         margin-top: 16px;
@@ -286,7 +556,7 @@ footer{
         width: 100%;
         height: 87px;
         position: fixed;
-        background: rgb(255,255,255, 0.8);
+        
         -webkit-backdrop-filter:blur(25px);
         backdrop-filter: blur(25px);
     }
@@ -300,7 +570,7 @@ footer{
     }
 
     #navitemSelected{
-        border-bottom: 4px solid #0047D0;;
+        border-bottom: 4px solid #3206FF;
     }
 
     .navitems::after{
@@ -322,8 +592,8 @@ footer{
     .navitems{
         display: inline-block;
         font-size: 22px;
-        color: #0047D0;
-        font-family: 'Raleway', sans-serif;
+        color: #3E3E3E;
+        font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         text-align: center;
         width: 100px;
@@ -365,7 +635,7 @@ footer{
     .navitems{
         display: inline-block;
         font-size: 11px;
-        color: #0047D0;
+        color: #3206FF;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         text-align: center;
@@ -414,61 +684,51 @@ footer{
 
 /* BUTTONS */
 
-.button-primary{
-    max-width: 150px;
-    background-color: #0047D0;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 14px;
+.pill-button {
+    display: inline-block;
+    padding: 10px 20px; 
+    border: 2px solid #3E3E3E; 
+    border-radius: 50px;
     text-align: center;
-    border-radius: 40px;
-    transition: all 0.2s linear;
     text-decoration: none;
-    padding: 20px;
-    display:block;
-    margin-top: 20px;
+    color: #3E3E3E;
+    font-weight: bold;
+transition: all 0.1s cubic-bezier(.87,-.41,.19,1.44);
+font-family: 'Open Sans', sans-serif;
+align-self: flex-start;
 }
 
+/* Hover effect */
+.pill-button:hover {
+    background-color: #EBE6FF;
+    color: #3206FF;
+    border: 2px solid #3206FF; 
+  transform: translateY(-4px) ; 
+  box-shadow: 0px 4px 0px 0px #3206FF;
+  transition: all 0.3s cubic-bezier(.87,-.41,.19,1.44)
+}
+
+.pill-button:active{
+
+  transform: translateY(-1px) ; 
+  box-shadow: 0px 1px 0px 0px #000;
+  transition: all 0.1s cubic-bezier(.87,-.41,.19,1.44)
+
+}
+
+
+
+
+
+
 @media (min-width: 960px) {
-    .button-primary:hover{
-        width: 170px;
-        background-color:aquamarine;
-        color:  #0047D0;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 800;
-        text-align: center;
-        border-radius: 26px;
-        font-size: 14px;
-        transition: all 0.2s linear;
-        
-    }
+   
     
-    .button-primary::after{
-        content: "  →";
-        margin-left: -15px;
-        display: inline-block;
-        transition: all 0.2s linear;
-        opacity: 0;
-    }
-    
-    .button-primary:hover::after{
-        content: "  →";
-        margin-left: 10px;
-        display: inline-block;
-        opacity: 1;
-        transition: all 0.2s linear;
-    }
-
-    .CTAarrow:hover{
-        display:inline-block;
-    }
-
     .button-ghost:hover{
-        background: aquamarine;
+        background: #EBE6FF;
         border-style: solid;
         border-width: 2px;
-        border-color: aquamarine;
+        border-color: #EBE6FF;
         transition: all 0.2s linear;
     }
 
@@ -478,7 +738,7 @@ footer{
         border-radius: 26px;
         margin-bottom: 0;
         padding-top: -52px;
-        background-color: aquamarine;
+        background-color: #EBE6FF;
         transition: all 0.2s linear;
     }
     .more-link::after{
@@ -499,7 +759,7 @@ footer{
         content:'';
         width: 100%;
         height: 40px;
-        background-color: aquamarine;
+        background-color: #EBE6FF;
         display: block;
         margin-top: -40px;
         transition: all 0.2s linear;
@@ -509,30 +769,19 @@ footer{
         content:'';
         width: 80px;
         height: 40px;
-        background-color: aquamarine;
+        background-color: #EBE6FF;
         display: block;
         margin-top: -40px;
         transition: all 0.2s linear;
     }
 
-    .navitems:hover:after{
-        content:'';
-        width: 100px;
-        height: 40px;
-        background-color: aquamarine;
-        transition: all 0.2s linear;
+    .navitems:hover{
+        border-bottom: 4px solid #3E3E3E;
+       
     }
   } 
 
   
-
-
-
-.button-primary:active{
-    transform: scale(.95);
-    transition: all 0.1s linear;
-    background-color: #E7EEFF;
-}
 
 .CTAarrow{
     display:none;
@@ -543,7 +792,7 @@ footer{
 .button-ghost{
     height: 52px;
     background-color: white;
-    color:  #0047D0;
+    color:  #3206FF;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     text-align: center;
@@ -554,7 +803,7 @@ footer{
     font-size: 14px;
     border-style: solid;
     border-width: 2px;
-    border-color: #0047D0;
+    border-color: #3206FF;
     user-select: all;
 }
 
@@ -568,7 +817,7 @@ footer{
     width: 52px;
     height: 52px;
     border-radius: 26px;
-    background-color: #00226E;
+    background-color: #1E0499;
     transition: all 0.2s linear;
 }
 
@@ -584,7 +833,7 @@ button{
 
 @media (max-width: 500px) {
     .more-link{
-        color: #0047D0;
+        color: #3206FF;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         font-size: 23px;
@@ -597,7 +846,7 @@ button{
 
 @media (min-width: 500px) {
     .more-link{
-        color: #0047D0;
+        color: #3206FF;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         font-size: 27px;
@@ -618,7 +867,7 @@ button{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: #3D3A4B;
+    color: #3E3E3E;
     cursor: pointer;
 }
 
@@ -644,31 +893,13 @@ button{
     object-fit: cover;
 }
 
-@media (min-width: 960px) {
-    #homebg{
-        background-image: url("images/bannerpatternfull.png");
-        background-repeat: no-repeat;
-        background-position-y: top;
-        background-position-x: center;
-        margin: 0;
-        padding: 0;
-    }
-  }
 
 
-@media (max-width: 960px) {
-    #homebg{
-        background-image: url("images/bannerpattern-sm.png");
-        background-repeat: no-repeat;
-        background-position-y: top;
-        background-position-x: center;
-        margin: 0;
-        padding: 0;
-    }
-  }
+
 
 #Recent_work_block{
     width: 100%;
+
 }
 
 @media (min-width: 768px) {
@@ -692,14 +923,14 @@ button{
     }
   }
 
-  .thumbholder{
+  /* .thumbholder{
     width: 100%;
     height: 240px;
     overflow: hidden;
     margin-bottom: 15px;
     overflow: hidden;
     background: grey;
-  }
+  } */
 
 .project-thumb{
     width: 100%;
@@ -744,46 +975,14 @@ button{
     display: block;
 }
 
-@media (max-width: 960px) {
-    #RobertKoh_name{
-        padding-top: 30px;
-        font-size: 60px;
-    }
-  }
 
-@media (min-width: 960px) {
-    #RobertKoh_name{
-        padding-top: 282px;
-        font-size: 101px;
-        margin: 0;
-        margin-bottom: -15px;
-    }
-}
-
-@media (min-width: 960px) {
-    #name_description{
-        max-width: 600px;
-        height: 540px;
-        display: inline-block;
-        float: left;
-        
-    }
-}
-
-@media (max-width: 960px) {
-    #name_description{
-        width: 100%;
-        display: block;
-        float: left;
-    }
-}
 
 @media (min-width: 960px) {
     #bannerimg{
         width: 272px;
         height: 272px;
         margin-top: 177px;
-        box-shadow: 0px 32px 50px 0 rgba(0, 71, 208, 0.15);
+        
         display: inline-block;
         float: right;
     }
@@ -794,7 +993,7 @@ button{
         width: 200px;
         height: 200px;
         margin-top: 0px;
-        box-shadow: 0px 32px 50px 0 rgba(0, 71, 208, 0.15);
+       
         display: block;
         float: left;
     }
@@ -847,6 +1046,7 @@ button{
         object-fit: cover;
         height: 350px;
         background-color:grey;
+        border-radius: 8px;
     }
 }
 
@@ -857,6 +1057,7 @@ button{
         background-color:grey;
         margin-top: 30px;
         object-fit: cover;
+        border-radius: 8px;
     }
 }
 
@@ -896,7 +1097,7 @@ button{
 
 @media (min-width: 768px) {
     .twothirds-wrapper{
-        max-width: 1200px;
+        max-width: 1440px;
         margin: 0 auto;
         padding: 180px 20px 0 20px; 
     }   
@@ -949,9 +1150,9 @@ button{
     width: 16px;
     height: 16px;
     border: none;
-    box-shadow: 0 0 0 0 rgba(0, 64, 208, 0.7);
+    box-shadow: 0 0 0 0 #3206FF;
     border-radius: 50%;
-    background-color: #0040D0;
+    background-color: #3206FF;
     -webkit-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
     -moz-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
     -ms-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -983,7 +1184,7 @@ button{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    color: #3D3A4B;
+    color: #3E3E3E;
     margin-bottom: -5px;
   }
 
@@ -1061,7 +1262,7 @@ button{
 
 
 nav{
-z-index: 1;
+z-index: 5;
 }
 
 #project-nav{

@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
 
 <script type="text/javascript" src="scripts.js"></script>
+<script type="text/javascript" src="logocarousel.js"></script>
 
     
 
@@ -14,8 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:wght@700;800&display=swap" rel="stylesheet">    <title>Robert Koh - Product, UX, UI and interaction designer</title>
 </head>
 
-<nav id="visibleNav" class="navGroup"> 
-    <img onclick="location.href='index.html';" id="RKlogo" src="images/Rlogo.svg" alt="" srcset="">
+<nav id="navbar" class="navGroup"> 
+    <img onclick="location.href='index.html';" id="RKlogo" src="images/Rlogo2024.svg" alt="" srcset="">
+
     <ul id="navlist">
         <li onclick="location.href='index.html';" id="navitem-home-mobile" class="navitems">
             <img class="footernavicon" src="images/icon-home-selected.svg" alt="" srcset="">
@@ -36,60 +38,122 @@
 </nav>
 
 
-<body id="homebg">
-    <div class= "wrapper">
-        <div class="bannerwrapper">
+<body>
+    <div class="homeHero">   
+
+        <div class="homeHeroWrapper">
             <div id = "name_description">
                 <h1 id="RobertKoh_name">Robert Koh</h1>
-                <h3>Product, UX, UI and interaction designer from Melbourne</h3>
+                <h3>Product, UX/UI Designer from Melbourne</h3>
             </div>
-            <div id= "bannerimg">
-                <img id="avatar"src="images/banner-img.png" alt="" srcset="">
-            </div>
+
+            <img id="homeHeroImg" src="images/robavatar.png" >
+       
         </div>
 
+    </div>
+
+
+
+
+
+    <div class= "wrapper">
+            
+
+        <!-- LOGO CAROUSEL -->
+
+        <div class="carouselBrackets">
+        
+            <div class="carousel">
+    
+                <div class="carousel-track">
+                  
+                     <div class="carousel-slide"><img src="images/logoreel.svg" alt="Logo 1"></div>
+  
+  
+                
+                   <div class="carousel-slide"><img src="images/logoreel.svg" alt="Logo 1"></div>
+  
+  
+                </div>
+  
+            </div>
+      
+        </div>
+
+
+
+
+    
         <div id="Recent_work_block">
-            <h2>Recent work</h2>
+            <h6 style="margin-bottom: .4em;
+            ">Recent work</h6>
 
-            <div class = "card-container">
-                <a href='vcat.html'" class="card-block">
+            <div class="grid">
+                <a href="envirosuite.html" class="card">
                     <div class = "thumbholder">  
-                        <img class ="project-thumb" src="images/vcat-cover.png" alt="" srcset="">
-                    </div>  
-                    <h4>VCAT</h4>
-                    <p>Userflow and interaction for itinerary and payments</p>
-                    <div class="button-primary">View case study</div>
-                </a>
-
-                <a href='happyhabit.html'" class="card-block">
-                    <div class = "thumbholder">  
-                        <img class ="project-thumb" src="images/HHhero.png" alt="" srcset="">
+                        <img class ="articleThumb" src="images/EVthumb.png">
                     </div> 
-                    <h4>The Happy Habit</h4>
-                    <p>End to end design for a React native meditation app</p>
-                    <div class="button-primary">View case study</div>
+              
+                  <div class="labelholder">
+                      <div class="categorylabel">Prototyping</div> <div class="categorylabel">Design systems</div>
+
+                  </div>
+              
+                  <h5 style="margin: 0;">Envirosuite</h5>
+                  <p style="margin: 0;">ES5 design system & interaction prototypes</p>
+                  
+                  <div style="margin-top: 1em;" class="pill-button">View case study</div>
                 </a>
 
-                <a href='zyppyz.html'" class="card-block">
+                <a href="vcat.html" class="card">
                     <div class = "thumbholder">  
-                        <img class ="project-thumb" src="images/zyppyz-cover.png" alt="" srcset="">
+                        <img class ="articleThumb" src="images/vcat-cover.png">
                     </div> 
-                    <h4>Zyppyz</h4>
-                    <p>UX→UI for a parking marketplace targeted towards schools.</p>
-                    <div class="button-primary">View case study</div>
+              
+                  <div class="labelholder">
+                      <div class="categorylabel">Interaction design</div> <div class="categorylabel">User testing</div>
+
+                  </div>
+              
+                  <h5 style="margin: 0;">VCAT</h5>
+                  <p style="margin: 0;">Userflow and micro-interactions for a hearings look-up and payments portal</p>
+                  
+                  <div style="margin-top: 1em;" class="pill-button">View case study</div>
                 </a>
-            
+
+                <a href="happyhabit.html" class="card">
+                    <div class = "thumbholder">  
+                        <img class ="articleThumb" src="images/HHhero.png">
+                    </div> 
+              
+                  <div class="labelholder">
+                      <div class="categorylabel">User research</div> <div class="categorylabel">Product strategy</div> <div class="categorylabel">Branding</div> 
+
+                  </div>
+              
+                  <h5 style="margin: 0;">The Happy Habit</h5>
+                  <p style="margin: 0;">End to end design for a React native meditation app</p>
+                  
+                  <div style="margin-top: 1em;" class="pill-button">View case study</div>
+                </a>
+
+
+
             </div>
 
-            <a style="margin-top: 20px;" href='work.html'" class="more-link">More work <img style="vertical-align: middle;" src="images/icon-arrow-right.svg" alt="" srcset=""></a>
-            
+            <button onclick="location.href='work.html'" class="more-link">More work <img style="vertical-align: middle;" src="images/icon-arrow-right.svg" alt="" srcset=""></button>
+                
         </div>
+
+
+
 
         <div class="half-block-reverse">
             <img class="half-img" src="images/robmeeting.jpg" alt="" srcset="">
             <div class="content-preview">
-                <h2>Designing digital experiences since 2011</h2>
-                <h3>My experience covers personal side hustles, through to start-ups and ASX listed corporates.</h3>
+                <h2>Designing digital experiences since 2012</h2>
+                <h3>My experience covers personal side hustles, start-ups, scale-ups and large corporations.</h3>
                 <button onclick="location.href='about.html'" class="more-link">More about me <img style="vertical-align: middle;" src="images/icon-arrow-right.svg" alt="" srcset=""></button>
             </div>
         </div>
@@ -98,15 +162,14 @@
         <div class="half-block">
             
             <div class="content-preview">
-                <h2>Post-it to pixel, end to end design.</h2>
-                <h3>No detail too small, no concept too abstract. Proven commercial experience covering all skills in the double diamond.</h3>
+                <h2>End to end design.</h2>
+                <h3>No detail too small, no concept too abstract. Proven commercial experience covering all stages in the double diamond.</h3>
                 <button onclick="location.href='skills.html'" class="more-link">More on my skills <img style="vertical-align: middle;" src="images/icon-arrow-right.svg" alt="" srcset=""></button>
             </div>
 
             <img class="half-img" src="images/robpostit.jpg" alt="" srcset="">
         </div>
 
-        <div class="divider"></div>
         
 
       
@@ -114,24 +177,35 @@
         
 
     </div>
+
+    
+
+
+
         
 </body>
 
-<footer>
-
-    <h2 style = "text-align: center; margin-bottom: 30px;">Get in touch</h2>
-        <div class="tooltip" id="tooltiphidden">copy to clipboard</div>
-        <div class="triangle"></div>
-        <button id="btnCopy" onclick= "copyStuff()" onmouseenter="enterFunc()" onmouseout="outFunc()" class="button-ghost">rjtkoh@gmail.com</button>
-        <div id="socialmedia">
-            <button onclick="location.href='https://au.linkedin.com/in/robert-koh-a13b7979'" class="button-social">
-                <img src="images/icon-linkedin.svg" alt="" srcset="">
-            </button>
-        </div>
-    
-    </footer>
-
-
-
 
 </html>
+
+
+<footer>
+
+        <div class="footerInner">
+            <h6>Contact</h6>
+            <div class="contactMethods">
+                <div class="contactItem">
+                    <img src="images/ic-email.svg" alt="" srcset="">
+                    <span class="contactText">rjtkoh@gmail.com</span>
+                </div>
+
+                <a href="https://au.linkedin.com/in/robert-koh-a13b7979" class="contactItem">
+                    <img src="images/ic-linkedin.svg" alt="" srcset="">
+                    <span class="contactText">Linkedin</span>
+                </a>
+
+            </div>
+        </div>
+
+</footer>
+
