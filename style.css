@@ -342,6 +342,13 @@ body{
 /* SIDEBAR FIX */
 
 
+.motionAsset{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
 @media (min-width: 768px) {
     .third{
         width: 30%;
@@ -349,6 +356,12 @@ body{
         display: inline-block;
         float: left;
 
+    }
+
+  
+
+    .motionAsset video{
+        width: 50%;
     }
 
     #h1Alt{
@@ -370,6 +383,12 @@ body{
         display: block;
         float: left;
     }
+
+    .motionAsset video{
+        width: 90%;
+    }
+
+    
 }
 
 @media (min-width: 768px) {
