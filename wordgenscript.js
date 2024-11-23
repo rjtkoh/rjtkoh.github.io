@@ -53,7 +53,7 @@ tabButtons.forEach(button => {
     // Update selected category
     selectedCategory = button.dataset.category;
     // Reset the generated word text
-    generatedWordText.textContent = 'Click "Generate" to start!';
+    generatedWordText.textContent = 'Click "New word" to start!';
   });
 });
 
