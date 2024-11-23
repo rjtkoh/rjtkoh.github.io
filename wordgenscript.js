@@ -26,13 +26,13 @@ const words = {
     "Doing Laundry"
   ],
   Countries: [
-    "USA", "Canada", "Mexico", "Brazil", "United Kingdom",
+    "USA", "Canada", "Mexico", "Brazil", "England",
     "France", "Germany", "Italy", "Spain", "Russia",
     "China", "Japan", "South Korea", "India", "Australia",
     "New Zealand", "South Africa", "Egypt", "Turkey", "Saudi Arabia",
-    "Thailand", "Indonesia", "Philippines", "Switzerland", "Netherlands",
+    "Thailand", "Indonesia", "Philippines", "North Korea", "Netherlands",
     "Sweden", "Norway", "Ireland", "Cuba", "Greece",
-    "Vietnam", "Portugal", "Malaysia", "Kenya"
+    "Vietnam", "Scotland", "Malaysia", "Kenya"
   ]
 };
 
