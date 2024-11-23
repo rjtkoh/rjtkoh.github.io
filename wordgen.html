@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Random Word Game</title>
-  <link rel="stylesheet" href="wordgenstyle.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Random Word Generator</h1>
-    <!-- Tabs for Category Selection -->
-    <div class="tabs">
-      <button class="tab-button active" data-category="Movies">Movies</button>
-      <button class="tab-button" data-category="Jobs">Jobs</button>
-      <button class="tab-button" data-category="Activities">Activities</button>
-      <button class="tab-button" data-category="Countries">Countries</button>
+    <!-- Header: Fixed Title and Tabs -->
+    <div class="header">
+<!--       <h1>Random Word Generator</h1> -->
+      <div class="tabs">
+        <button class="tab-button active" data-category="Movies">Movies</button>
+        <button class="tab-button" data-category="Jobs">Jobs</button>
+        <button class="tab-button" data-category="Activities">Activities</button>
+        <button class="tab-button" data-category="Countries">Countries</button>
+      </div>
     </div>
-    <p id="generated-word">Select a category and click "Generate".</p>
-    <button id="generate-button">Generate</button>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <p id="generated-word">✏️Clue Canvas🕵️‍♂️</p>
+      <button id="generate-button">New word</button>
+    </div>
   </div>
-  <script src="wordgenscript.js"></script>
 </body>
+
+<script src="wordgenscript.js"></script>
 </html>
+
+
+
