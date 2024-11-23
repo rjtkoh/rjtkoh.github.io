@@ -64,6 +64,6 @@ generateButton.addEventListener('click', () => {
     const randomIndex = Math.floor(Math.random() * categoryWords.length);
     generatedWordText.textContent = categoryWords[randomIndex];
   } else {
-    generatedWordText.textContent = 'Please select a category.';
+    generatedWordText.textContent = 'Click "New word"';
   }
 });
