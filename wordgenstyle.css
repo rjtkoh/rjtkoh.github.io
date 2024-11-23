@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+/* Tabs Styling */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 15px;
+  font-size: 1.1em;
+  border: none;
+  background: #e0e0e0;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab-button:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+.tab-button.active {
+  background: #007BFF;
+  color: white;
+  border-bottom: 2px solid #007BFF;
+}
+
+.tab-button:hover {
+  background: #d0d0d0;
+}
+
+button:focus {
+  outline: none;
+}
+
+#generated-word {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+  background-color: #f8f8f8;
+  padding: 20px 10px; /* Updated padding for balanced top and bottom */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 80px;
+}
+
+button#generate-button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button#generate-button:hover {
+  background: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .tab-button {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  button#generate-button {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  #generated-word {
+    font-size: 2em;
+    padding: 15px 10px;
+  }
+}
