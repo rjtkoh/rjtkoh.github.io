@@ -2,33 +2,49 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
 }
 
 .container {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%; /* Make container fill 100% of the width */
   background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 400px;
+  padding: 0;
+  border-radius: 0; /* Remove border radius to match full width */
+  box-shadow: none; /* Optional: Remove box shadow to match edge-to-edge look */
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make header span the full width of the screen */
+  background: white;
+  z-index: 1000;
+  border-bottom: 2px solid #ddd;
+  text-align: center;
 }
 
 h1 {
-  margin-bottom: 20px;
   font-size: 1.8em;
+  margin: 10px 0;
 }
 
-/* Tabs Styling */
 .tabs {
   display: flex;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ddd;
+  justify-content: center;
+  width: 100%; /* Full container width */
+  margin: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .tab-button {
@@ -40,6 +56,7 @@ h1 {
   color: #333;
   cursor: pointer;
   transition: background 0.3s;
+  text-align: center;
 }
 
 .tab-button:not(:last-child) {
@@ -60,29 +77,39 @@ button:focus {
   outline: none;
 }
 
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 130px; /* Adjust margin to account for fixed header height */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 #generated-word {
-  font-size: 2.5em;
+  font-size: 4em;
   font-weight: bold;
-  margin-top: 20px;
+  margin: 0 auto;
   color: #333;
-  background-color: #f8f8f8;
-  padding: 20px 10px; /* Updated padding for balanced top and bottom */
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-height: 80px;
+  padding: 20px 10px;
+
+ 
+
 }
 
 button#generate-button {
   padding: 15px 30px;
-  font-size: 1.2em;
+  font-size: 2em;
   border: none;
   background: #28a745;
   color: white;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
-  width: 100%;
+  width: 100%; /* Button spans full width */
   margin-top: 20px;
 }
 
@@ -90,24 +117,4 @@ button#generate-button:hover {
   background: #218838;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.5em;
-  }
 
-  .tab-button {
-    font-size: 1em;
-    padding: 10px;
-  }
-
-  button#generate-button {
-    font-size: 1em;
-    padding: 10px;
-  }
-
-  #generated-word {
-    font-size: 2em;
-    padding: 15px 10px;
-  }
-}
