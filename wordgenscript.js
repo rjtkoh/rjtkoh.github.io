@@ -34,6 +34,36 @@ const words = {
     "Sweden", "Norway", "Ireland", "Cuba", "Greece",
     "Vietnam", "Scotland", "Malaysia", "Kenya"
   ]
+
+  People: [
+    "Leonardo DiCaprio",
+    "Beyoncé",
+    "Ed Sheeran",
+    "Tom Hanks",
+    "Ryan Reynolds",
+    "Brad Pitt",
+    "Taylor Swift",
+    "Rihanna",
+    "Justin Bieber",
+    "Serena Williams",
+    "Elon Musk",
+    "Donald Trump",
+    "Scarlett Johansson",
+    "Will Smith",
+    "Bruce Lee",
+    "Connor McGregor",
+    "Hugh Jackman",
+    "Mark Zuckerberg",
+    "Jim Carrey",
+    "Michael Jordan",
+    "Chris Hemsworth",
+    "Emma Watson",
+    "Keanu Reeves",
+    "Johnny Depp",
+    "Christian Bale",
+    "Michael Jackson",
+    "Millie Bobby Brown"
+];
 };
 
 // DOM elements
