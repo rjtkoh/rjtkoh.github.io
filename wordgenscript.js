@@ -33,7 +33,7 @@ const words = {
     "Thailand", "Indonesia", "Philippines", "North Korea", "Netherlands",
     "Sweden", "Norway", "Ireland", "Cuba", "Greece",
     "Vietnam", "Scotland", "Malaysia", "Kenya"
-  ]
+  ],
 
   People: [
     "Leonardo DiCaprio",
