@@ -160,10 +160,12 @@
     }
 
     .homeHeroWrapper{
-        width: 1440px;
+        max-width: 1440px;
+        width: 100%;
         height: 400px;
         padding: 100px 20px 0 20px;
         display: flex;
+        box-sizing: border-box;
     
     }
 }
@@ -177,6 +179,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-column-gap: 32px;
+     box-sizing: border-box;
   }
   
   .card{
@@ -327,13 +330,18 @@ p, li{
 body{
     margin: 0 !important;
     padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .wrapper{
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
   }
 
 
@@ -454,8 +462,9 @@ body{
     }
 
     footer{
-        padding: 0 20px;
-       
+       width: 100%;
+       padding: 0 20px;
+       box-sizing: border-box;
     }
 
     
@@ -470,8 +479,13 @@ body{
 
 
     footer{
+        display: flex;
+        max-width: 1480px;
+        width: 100%;
         padding: 0 20px;
-       
+        box-sizing: border-box;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
     }
 
     .footerInner{
@@ -479,9 +493,8 @@ body{
         flex-direction: row;
         padding: 24px;
         justify-content: space-between;
-                background:#EEEBEA;
-        max-width: 1440px;
-        margin: 4em auto 1em auto;
+        background:#EEEBEA;
+        width: 100%;
         border-radius: 8px;
 
     }
@@ -914,7 +927,7 @@ button{
 
 #Recent_work_block{
     width: 100%;
-
+    box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
@@ -1136,7 +1149,7 @@ button{
     margin-left:10px;
     padding-left: 27px;
     padding-top: 6px;
-    padding-bottom: 70px;
+    padding-bottom: 4rem;
   }
 
   .timebox-end{
