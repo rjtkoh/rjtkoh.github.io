@@ -43,8 +43,8 @@
     <div class ="twothirds-wrapper">
         <div class="third">
             <div onclick="location.href='work.html'" id = "breadcrumb">Work / </div>
-            <h1>Bodd</h1>
-            <h3>Touch screen interface for a 3D body scanner</h3>
+            <h1>Testing the UX impact of new hardware</h1>
+            <h3>Improving the physical and digital experience for a 3D body scanner at Bodd</h3>
 
             <!-- <div class= "project-spec">
                 <div class = "label">Platforms</div>
@@ -53,46 +53,217 @@
 
             <div class= "project-spec">
                 <div class = "label">Responsibilities</div>
-                <p>Interaction design, UX, UI, illustration, animation</p>
+                <p>Prototyping, Motion Design, User Testing</p>
             </div>
 
-            <div style="margin-bottom: 3em;" class= "project-spec">
+            <!-- <div style="margin-bottom: 3em;" class= "project-spec">
                 <div class = "label">Period</div>
                 <p>2022-2024</p>
-            </div>
+            </div> -->
 
         </div>
         <div class="two-thirds">
 
 
-            <img class = "fullimg" src="images/boddHero.jpg" alt="" srcset=""> 
-            <h4>Background</h4>
-            <p>Bodd have a bespoke piece of hardware which scans bodies for measurments and wellness insights. The following is a brief collection of experiences designed for the scanner's touch screen interface. </p>
-
             
+            <h4>Context</h4>
+            <p>Bodd’s 3D scanners measure body shape and wellness indicators to help organisations fit uniforms accurately and promote staff wellbeing. Already deployed across United Airlines, New Zealand Defence Force, Fire Rescue Victoria, and South Australia Police, it was now evolving toward a wellness-enhanced model. To encourage consistent scanning posture, this new model introduced stability handles, as well as foot imprints, which raised new UX challenges.</p>
+
+            <img class = "fullimg" src="images/bodd-R1-R2-comparison.jpg" alt="" srcset=""> 
+            <p class="caption">Old model (left), new model with handles (right)</p> 
             
+
+            <h4>Challenge</h4>
+            <p>The new handle designs included a button to allow users to adjust the height of the grip. The base of the scanner also now had foot imprints to prompt the user to stand correctly in place.</p>
+            <img class = "fullimg" src="images/bodd-handle-button.png" alt="" srcset=""> 
+            <p class="caption">Height adjustment mechanism, how easy was this to understand?</p>
+            <p>We needed to confirm that:</p>
+                    <ul>
+                        <li>Users intuitively knew how to adjust the height.</li>
+                        <li>Users understood where to stand and how to position themselves.</li>
+                        <li>Instructions on the display were clear and timely.</li>
+                        <li>We could estimate the average time spent on the scanner with this new hardware addition.</li>
+                    </ul>
+
+
+            <img class = "fullimg" src="images/bodd-bodd-base-old-new.jpg" alt="" srcset=""> 
+            <p class="caption">Old model base- no foot imprints (left), new model base with foot imprints (right)</p> 
+
+           <h4>Approach</h4>
+            <p>As the production hardware was yet to be fully confirmed and mass produced, I had to simulate the experience realistically enough to observe authentic behaviour with the proposed handle design. <br>I sourced readily available materials for a makeshift prototype of the scanner setup and proposed interface:</p>
+                <ul>
+                    <li>An iPad on an elevated stand to represent the scanner’s touch display, running a clickable Figma prototype with new handle and foot imprint instructions.</li>
+                    <li>Printed base templates indicating stance and orientation.</li>
+                    <li>A makeshift wooden mount for the base which the hardware team had prepared.</li>
+                    <li>The latest version of the proposed handles to slot into the base.</li>
+                </ul>
+            <img class = "fullimg" src="images/bodd-prototype-setups.jpg" alt="" srcset="">
+            <p class="caption">Prototype set ups, testing at home and office.</p>
+
+            <p>Each session involved:</p>
+            <ul>
+                <li>Getting the user to click through the instructional flow that precedes the scan.</li>
+                <li>Observing how they prepare themselves for the scan based on the instructions administered </li>
+                <li>Post-session interviews on clarity of instructions</li>
+            </ul>
+
+            <h4>UI Prototype</h4>
+            <div class="video-container" style="margin-top:.7em; relative; display: inline-block; width: 100%; max-width: 800px; cursor: pointer;" onclick="openVideoModal()">
+                <video style="width: 100%; display: block;" type="video/mp4" loop autoplay muted playsinline oncontextmenu="return false;" preload="auto" src="images/bodd-handle-flow-proto.mp4"></video>
+                <img src="images/playVideo.svg" alt="Play" class="play-icon-overlay">
+                 
+            </div>
+            <p class="caption">Click above to watch full prototype demo (sound on)</p> 
+
+
+            <h4>Key Insights</h4>
+
+                <ul>
+                    <li>On the first iteration, some users were unsure when the instruction started and ended — they didn't always know when it was their "turn" to act.</li>
+                    <li>Some instructions were too text-heavy and intimidating, which led some users to skip them out of impatience.</li>
+                    <li>It took an average of 47 seconds to go through the instructional process.</li>
+                    <li>Most users intuitively pressed the button on the handle to adjust the height.</li>
+                    <li>Users intuitively stood on the foot imprints.</li>
+                </ul>
+
+
+             <h4>Impact</h4>
+             <p>My prototype and user-testing sessions helped the team:</p>
+            <ul>
+                <li>Validate how intuitive the button mechanism of the handles were.</li>
+                <li>Validate the effectiveness of the foot imprints on the base before full-scale manufacturing.</li>
+                <li>Refine the on-screen copy into short, command-style steps that balanced clarity with brevity.</li>
+                <li>Clarity was critical for high-quality scans, but speed was equally important — military clients needed to process large volumes of recruits quickly, so every second mattered. Testing helped us gauge where we sat on that spectrum and what trade-offs were worth making.</li>
+                <li>Estimate the new average scan-session duration, enabling sales and operations teams to plan and market high-volume scanning sessions.</li>
+                <li>Inform the software roadmap by giving developers clear evidence of which features and interactions mattered most to users.</li>
+            </ul>
+
+            <!-- Video Modal -->
+            <div id="videoModal" class="video-modal" onclick="closeVideoModal()">
+                <span class="video-modal-close">&times;</span>
+                <video id="modalVideo" class="video-modal-content" controls></video>
+            </div>
             
+            <style>
+            .play-icon-overlay {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) scale(1);
+                box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+                transition: box-shadow 0.2s, transform 0.2s;
+                width: 80px;
+                height: 80px;
+                pointer-events: none;
+                z-index: 2;
+                border-radius: 100%;
+            }
+            .video-container {
+                position: relative;
+            }
+            .video-container::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(50, 6, 255, 0);
+                transition: background-color 0.2s;
+                pointer-events: none;
+                z-index: 1;
+            }
+            .video-container:hover::before {
+                background-color: rgba(50, 6, 255, 0.5);
+            }
+            .video-container:hover .play-icon-overlay {
+                box-shadow: 0 8px 32px rgba(0,0,0,0.75);
+                transform: translate(-50%, -50%) scale(1.1);
+            }
 
+            /* Video Modal Styles */
+            .video-modal {
+                display: none;
+                position: fixed;
+                z-index: 9999;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.95);
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+            }
+            .video-modal.show {
+                opacity: 1;
+            }
+            .video-modal-content {
+                max-width: 90%;
+                max-height: 90%;
+                margin: auto;
+            }
+            .video-modal-close {
+                position: absolute;
+                top: 20px;
+                right: 35px;
+                color: #fff;
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 10000;
+            }
+            .video-modal-close:hover {
+                color: #3206FF;
+            }
+            </style>
+            <script>
+            function openVideoModal() {
+                var modal = document.getElementById('videoModal');
+                var video = document.getElementById('modalVideo');
+                
+                // Determine which video to load based on screen width
+                var videoSrc = window.innerWidth <= 768 
+                    ? 'images/bodd-handle-flow-proto-mobile.mp4'
+                    : 'images/bodd-handle-flow-proto.mp4';
+                
+                video.src = videoSrc;
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+                setTimeout(function() {
+                    modal.classList.add('show');
+                    video.muted = false;
+                    video.play();
+                }, 10);
+                document.addEventListener('keydown', handleEscKey);
+            }
 
-            <div class="motionAsset"><video  type="video/mp4" loop autoplay muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto" src="images/scanflow01.mp4" ></video></div>
-            <p class="caption">The self serve flow for how a user gets scanned. Users need to be completely self reliant on performing a scan, hence a clear instructional user experience was designed to allow them to complete a scan unsupervised.</p> 
+            function closeVideoModal() {
+                var modal = document.getElementById('videoModal');
+                var video = document.getElementById('modalVideo');
+                modal.classList.remove('show');
+                video.pause();
+                video.currentTime = 0;
+                setTimeout(function() {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }, 300);
+                document.removeEventListener('keydown', handleEscKey);
+            }
 
-            <div  class="motionAsset"><video  type="video/mp4" loop autoplay muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto" src="images/handscan.mp4" ></video></div>
-            <p class="caption">The Bodd scanner also offered a hand scan function for sizing gloves. This experience guides users through the hand scanning process.</p> 
+            function handleEscKey(event) {
+                if (event.key === 'Escape') {
+                    closeVideoModal();
+                }
+            }
+            </script>
+           
 
 
             
 
            
-
-            
-
-            
-            
-
-            
-
-        
         </div>
 
 

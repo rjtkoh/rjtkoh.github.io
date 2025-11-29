@@ -245,6 +245,7 @@
         font-size: 75px;
         margin: 0;
         color: #3E3E3E;
+        line-height: 1.1em;
     }
 }
 
@@ -318,10 +319,8 @@ p, li{
     font-style: italic;
     color: #8A8A8A;
     margin-bottom: 40px;
-    text-align: center;
+    text-align: left;
   }
-
-
 
 
 /* GLOBAL */
